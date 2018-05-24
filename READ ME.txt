@@ -1,0 +1,15 @@
+-make
+
+cd /bin
+
+extraction
+./extract_surf ../exemples/gobelet.png k1.txt
+./extract_surf ../exemples/gobelet2.png k2.txt
+
+matching
+
+./match_surf k1.txt k2.txt matches.txt
+
+affichage
+
+./display_surf k1.txt k2.txt matches.txt ../exemples/gobelet.png ../exemples/gobelet2.png descriptor.png matches.png
